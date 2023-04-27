@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" type="module"></script>
+</head>
+
+<body>
+  <header></header>
+  <main></main>
+  <footer></footer>
+  <h1>Aba de pagamento</h1>
+
+  <br>  <br>
+
+
+<div class="visual-card"> 
+<!-- essa div vai ser em preto e adicionar uma div onde vai por uma imagem de chip de cartão -->
+<div class="card-Num" id="card-Num">XXXXXXXXXXXXXXXX</div>
+<!-- fazer mais uma div opcional com os dados de nome e data de vencimento -->
+</div>
+<br>
+
+<form id="form">
+
+    <label for="input-card-number">Número do cartão</label>
+    <input type="text" size="16" id="userNum" required class="card-input" >
+  <br><br>
+    <input type="submit" id="submit">
+
+</form>
+</body>
+
 </html>

@@ -1,27 +1,14 @@
 const validator = {
   isValid: function (ccNum){
-    // const getUserInput = userNum.value
-    // const ccNum = getUserInput();
     const ccNumSplit = ccNum.split("");
     let sum = 0;
     const singleNums = []; 
     let doubleNums = [];
     let finalArry = undefined;
-    let validCard = false;
+    let validCard = true;
 
-    // if((!/\d{15,16}(~\W[a-zA-Z])*$/g.test(ccNum)) || (ccNum.length > 16)){
-    //   return false;
-    // }
 
-    if(ccNum.length === 15){  //american express
-      for(let i = ccNumSplit.length-1; i>=0; i--){
-        if(i % 2 === 0){
-          singleNums.push(ccNumSplit[i]);
-        }else{
-          doubleNums.push((ccNumSplit[i] * 2).toString());
-        }
-      }
-    }else if(ccNum.length === 16){
+    if(ccNum.length >= 9){
       for(let i = ccNumSplit.length-1; i>=0; i--){
         if(i % 2 !== 0){
           singleNums.push(ccNumSplit[i]);
@@ -30,8 +17,7 @@ const validator = {
         }
       }
     }
-    //joining makes an array to a string and I split them up again
-    //so that every number is a single digit and convert back to array
+
 
     doubleNums = doubleNums.join("").split("");
     finalArry = doubleNums.concat(singleNums);
@@ -41,10 +27,8 @@ const validator = {
     }
 
     if(sum % 10 === 0){
-      validCard = true;
+      validCard = false;
     }
-    //the console log is for you, so you can see the sum, all sums that are
-    //divisible by 10 should be good.  Just open up your console to view.
 
     return validCard;
   },

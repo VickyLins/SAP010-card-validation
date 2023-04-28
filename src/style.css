@@ -1,25 +1,30 @@
-body {display:flex;
+body {
+    display:flex;
     justify-content:center;
     align-items:center;
     align-content: center;
     background-color: #D3D2CC;
-    flex-direction: column;
+    background-image: url(./assets/background.jpg);
 }
 
-.card {
+.visual-card {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    background-color:black; 
     max-width: 416px;
     border-radius: 1rem;
+    width: 370px;
+    height: 185px;
+    top: 38%;
+    left: 50%;
+    overflow: hidden;
 }
 
-.card_body {
+.card-Num{
+    color: beige;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
 }
 
 img{
@@ -30,56 +35,63 @@ img{
     margin-bottom: 10 rem;
 }
 
-button{
-    background: #B0A4A4;
-    border: none;
-    font-size: medium;
-}
-.button{
-display: flex;
-justify-content: center;
-cursor: pointer;
-background: #B0A4A4;
-color: #FDF4F5;
-text-align:center; 
-border-radius: 0.8rem;
-font-weight: 600;
-border: none;
-width: 28%;
-margin-bottom: 1.5 rem; 
 
+input[type="submit"]:hover {
+    background: black;
+    color: beige;
 }
 
-.button:hover {
-    background: #C7E9B0;
-}
-
-button:hover {
-    background: #C7E9B0;
-}
-
-.input {
+input[type="submit"] {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #FDF4F5;  
-    border: none;
-    border-radius: 0.8rem;
-    width: 28%;
-    height: 24%;
+    width: 390px;
 }
 
 input{
-    border: none;
-    width: 90%;
-    border-radius: 0.8rem;
-    background: #FDF4F5; 
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    border-radius: 0.8rem; 
+    height: 32px;
+    position:relative;
+    padding: 0px 10px 0px 6px;
+    background: #F1F6F9;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    z-index: 0;
+}
+h1{
+    font-size: 42px;
+    letter-spacing: -2px;
+    color: #6d819c;
+    text-align: center;
+    line-height: 2.8;
 }
 
-#resultado{
-    background-color: #ccc;
-    font-family: Arial;
-    font-size: 20px;
-    width: 80%;
+.visual-card.img{
+    width: 5%;
+    height: 10%;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
 }
+img{
+    width: 13%;
+    height: 20%;
+    position:relative;
+    margin-top: -100px;
+    margin-left: -75px;
+    
+}
+.container{
+    display: inline;
+    justify-content: center;
+    margin-top: 50px ;
+    background-color: #D3D2CC;
+    border-radius:0.9rem ;
+    width: 50%;
+    height: 600px;
+
+}
+

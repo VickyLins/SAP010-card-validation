@@ -1,0 +1,128 @@
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    background-color: #D3D2CC;
+    background-image: url(./assets/background.jpg);
+}
+
+.visual-card {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:black; 
+    border-radius: 1rem;
+    width: 420px;
+    height: 200px;
+}
+.cardcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.card-Num{
+    color: beige;
+}
+
+.card_Name{
+    color: beige;
+}
+.expiration_date{
+    color: beige;
+
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    border-radius: 1rem 1rem 0 0;
+    margin-bottom: 10 rem;
+}
+
+
+input[type="submit"]:hover {
+    background: black;
+    color: beige;
+}
+
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    width: 390px;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    width: 370px; 
+    border-radius: 0.8rem; 
+    height: 32px;
+    position:relative;
+    padding: 0px 10px 0px 6px;
+    background: #F1F6F9;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    z-index: 0;
+}
+h1{
+    font-size: 42px;
+    letter-spacing: -2px;
+    color: #6d819c;
+    text-align: center;
+    line-height: 2.8;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.visual-card.img{
+    width: 5%;
+    height: 10%;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 11%;
+    height: 20%;
+    position: relative;
+    margin-top: -100px;
+    margin-left: -75px;
+    
+}
+.container{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    background-color: #D3D2CC;
+    border-radius:0.9rem ;
+    width: 650px;
+    height: 676px;
+}
+
+form{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    
+}
+
+
+.side{
+    display: table-column;
+    justify-content: center;
+}
+
+.name{
+    flex-direction: column;
+
+}
+
+.date{
+    flex-direction: column; 
+}

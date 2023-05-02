@@ -18,23 +18,43 @@
 
   <br>  <br>
 
-
-<div class="visual-card"> 
+  <div class="cardcard">
+  <div class="visual-card"> 
 <img src="./assets/chipCard.png" alt="">
+<br><br>
+
+  <div class="inputsInCard">  
+  <div class="card-Num" id="card-Num">XXXXXXXXXXXXXXXXXX</div>
 <br>
-<div class="card-Num" id="card-Num">XXXXXXXXXXXXXXXXXX</div>
-<!-- fazer mais uma div opcional com os dados de nome e data de vencimento -->
+  <div class="card_Name" id="card_Name">Nome no Cartão</div>
+<br>
+  <div class="expiration_date" id="expiration_date"> 00/00</div>
+</div>
+</div>
+
 </div>
 <br>
 
 <form id="form">
-
-    <label for="">Número do cartão</label>
+    <label for="">Número do Cartão</label>
     <input type="text" size="16" id="userNum" required class="card-input" >
+
+<br>
+<div class="side">
+  <div class="name">
+    <label for="">Nome Completo</label>
+    <input type="text" size="60" id="userName" required class="name-input">  </div>
+
+<br>
+<div class="date">
+    <label for="date">Data de vencimento</label>
+    <input type="month" id="dateNum" required class="date_input"> </div>
+  </div>
   <br><br>
     <input type="submit" id="submit">
+  </form>
   </div>
-</form>
+
 </body>
 
 </html>

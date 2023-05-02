@@ -6,10 +6,27 @@ const userNumInput = document.getElementById("userNum");
 const cardNumber = document.getElementById("card-Num");
 const formSubmit = document.getElementById("form");
 
+const userNameInput = document.getElementById("userName") 
+const cardName = document.getElementById("card_Name")
+
+const expirationDataInput = document.getElementById("dateNum")
+const cardDate = document.getElementById("expiration_date")
+
 userNumInput.oninput = function (event) {  //oninput puxa o valor do input
   cardNumber.innerText = event.target.value //mostra o valor do input na div do cartão
   console.log(event.target.value)
 };
+
+userNameInput.oninput = function (event) {  //oninput puxa o valor do input
+  cardName.innerText = event.target.value //mostra o valor do input na div do cartão
+  console.log(event.target.value)
+};
+
+expirationDataInput.oninput = function (event) {  //oninput puxa o valor do input
+  cardDate.innerText = event.target.value //mostra o valor do input na div do cartão
+  console.log(event.target.value)
+};
+
 
 formSubmit.onsubmit = function (event) {
   event.preventDefault();

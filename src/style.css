@@ -12,25 +12,33 @@ body {
     justify-content: center;
     align-items:center;
     background-color:black; 
-    max-width: 416px;
     border-radius: 1rem;
-    width: 370px;
-    height: 185px;
-    top: 38%;
-    left: 50%;
-    overflow: hidden;
+    width: 420px;
+    height: 200px;
 }
-
-.card-Num{
-    color: beige;
+.cardcard{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.card-Num{
+    color: beige;
+}
+
+.card_Name{
+    color: beige;
+}
+.expiration_date{
+    color: beige;
+
 }
 
 img{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     border-radius: 1rem 1rem 0 0;
     margin-bottom: 10 rem;
 }
@@ -50,7 +58,7 @@ input[type="submit"] {
 input{
     display: flex;
     justify-content: center;
-    width: 370px;
+    width: 370px; 
     border-radius: 0.8rem; 
     height: 32px;
     position:relative;
@@ -67,6 +75,8 @@ h1{
     color: #6d819c;
     text-align: center;
     line-height: 2.8;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .visual-card.img{
@@ -77,21 +87,42 @@ h1{
     align-items: center;
 }
 img{
-    width: 13%;
+    width: 11%;
     height: 20%;
-    position:relative;
+    position: relative;
     margin-top: -100px;
     margin-left: -75px;
     
 }
 .container{
-    display: inline;
-    justify-content: center;
-    margin-top: 50px ;
+    margin-top: 10px ;
+    margin-bottom: 10px;
     background-color: #D3D2CC;
     border-radius:0.9rem ;
-    width: 50%;
-    height: 600px;
+    width: 650px;
+    height: 676px;
+}
+
+form{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; 
+    flex-direction: column;
+    
+}
+
+
+.side{
+    display: table-column;
+    justify-content: center;
+}
+
+.name{
+    flex-direction: column;
 
 }
 
+.date{
+    flex-direction: column; 
+}
